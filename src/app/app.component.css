@@ -1,10 +1,14 @@
 /* Optional styles for the app */
-h2 {
+h1 {
   color: #333;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
 }
 
 .user-list-container {
   margin-top: 20px;
+
 }
 
 ul {
