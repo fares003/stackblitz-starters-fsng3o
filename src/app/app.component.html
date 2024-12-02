@@ -1,0 +1,17 @@
+<div class="app-container">
+<h1>Welcome to User Management</h1>
+
+<!-- Register Component -->
+<app-register (userAdded)="onUserAdded($event)"></app-register>
+
+<!-- User List Component -->
+<app-user-list
+  [users]="users"
+  (userDeleted)="onUserDeleted($event)">
+</app-user-list>
+
+<!-- Link to Signin Page -->
+<p class="signin-link">
+  Already have an account? <a routerLink="/signin">Signin</a>
+</p>
+</div>
